@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image';
 import PersonImage from '../public/person_white_24dp.svg';
+import PersonCouni from '../logos/COUNI Astro m-min.png'
 import Like from '../public/thumb_up_white_24dp.svg';
 import Dislike from '../public/thumb_down_white_24dp.svg';
 import { useMoralisCloudFunction, useMoralisQuery } from 'react-moralis';
@@ -40,17 +41,17 @@ const Post = ({tweet}: any) => {
 	}
 
 	return (
-		<div className='border-t p-3 max-h-80 overflow-y-scroll'>
+		<div className='border-t p-4 max-h-80 break-words'>
 			<div className='flex items-center'>
-				<Image src={PersonImage} width={55} height={55} className='bg-gray-800 rounded-full' />
-				<h1 className='p-3 text-2xl font-medium'>{authorName}</h1>
+				<Image src={PersonCouni} width={44} height={44} className='bg-gray-800 rounded-full' />
+				<h1 className='p-3 font-medium'>{authorName}</h1>
 			</div>
 			<div>
-				<pre>{message}</pre>
-				<div className='flex'>
-					<Image src={Like} width={30} height={25} className='hover:bg-gray-600 transition-all rounded-full hover:cursor-pointer' onClick={likeTweet} />
+				<tbody>{message}</tbody>
+				<div className='flex text-ellipsis'>
+					<Image src={Like} width={24} height={20} className='hover:bg-gray-600 transition-all rounded-full hover:cursor-pointer' onClick={likeTweet} />
 					<p>{like}</p>
-					<Image src={Dislike} width={30} height={25} className='hover:bg-gray-600 transition-all rounded-full hover:cursor-pointer' onClick={dislikeTweet}/>
+					<Image src={Dislike} width={24} height={20} className='hover:bg-gray-600 transition-all rounded-full hover:cursor-pointer' onClick={dislikeTweet}/>
 					<p>{dislike}</p>
 				</div>
 			</div>

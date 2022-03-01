@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Image from 'next/image';
 import PersonImage from '../public/person_white_24dp.svg';
+import CreateMessage from '../logos/couni conscious.png'
 import Post from '../components/Post';
 import { useMoralis } from 'react-moralis';
 import Login from '../components/Login';
@@ -69,11 +70,11 @@ const Index: NextPage = () => {
 			{/* render the homepage if the user is authenticated. Else, render the login page */}
 			{isAuthenticated ? 
 			<div>
-				<h1 className='text-2xl font-bold p-3 mb-1'>Home</h1>
+				<h1 className='text-2xl font-bold p-3 mb-1'>The Universe</h1>
 				<div className='mb-5 p-3'>
-					<Image src={PersonImage} width={60} height={60} className='bg-gray-800 rounded-full' />
-					<textarea placeholder="What's happening?" className='w-full m-1 p-1 bg-transparent border-b-2 outline-none' value={message} onChange={e => setMessage(e.target.value)} />
-					<button className='bg-blue-600 text-white pl-4 pr-4 pt-2 pb-2 rounded-full font-semibold hover:bg-blue-700' onClick={tweet}>Tweet</button>
+					<Image src={CreateMessage} width={66} height={66} className='bg-gray-800 rounded-full' />
+					<textarea placeholder="Synchronize a thought with the universe..." className='w-full m-1 p-2 bg-transparent border-b-2 outline-none' value={message} onChange={e => setMessage(e.target.value)} />
+					<button className='bg-blue-600 text-white pl-4 pr-4 pt-2 pb-2 rounded-full font-semibold hover:bg-blue-700' onClick={tweet}>Sync</button>
 				</div>
 				<div className='flex flex-col'>
 					{tweets?.map((tweet: any, index: number) => (

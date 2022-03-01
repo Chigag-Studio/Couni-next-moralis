@@ -10,9 +10,9 @@ function MyApp({ Component, pageProps }: AppProps) {
 		// process.env.NEXT_PUBLIC_URL! process.env.NEXT_PUBLIC_ID!
 		<MoralisProvider serverUrl={process.env.NEXT_PUBLIC_URL!} appId={process.env.NEXT_PUBLIC_ID!}>
 			<Head>
-				<title>Web 3.0 Twitter Clone</title>
+				<title>Co-Uni Social Graph for Lightworkers</title>
 			</Head>			
-			<div className='flex w-screen justify-between bg-black'>
+			<div className="flex w-screen justify-between bg-gradient-to-r from-black to-yellow-500">
 				<Navbar />
 				<div className='w-6/12 border-r text-white'>
 					<Component {...pageProps} />
