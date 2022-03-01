@@ -1,5 +1,3 @@
-# Web 3.0 Twitter Clone
-
 ### About
 ---
 This is a proof of concept for Co-Uni.
@@ -7,7 +5,7 @@ A twitter clone built using next.js, moralis.io, Lens Protocol and tailwindcss.
 
 ### Demo
 ---
-Here's a [demo]() for the application.
+[demo]()
 
 ### Features
 ---
@@ -17,8 +15,8 @@ This application contains the following features:
 - posting a new tweet
 - deleting an old tweet
 - like and dislike a tweet
-- follow other users
-- show user recommendations to follow
+- follow other users (wip)
+- show user recommendations to follow(wip)
 
 ### Screenshots
 ---
