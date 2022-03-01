@@ -7,7 +7,7 @@ A twitter clone built using next.js, moralis.io, Lens Protocol and tailwindcss.
 
 ### Demo
 ---
-Here's a [demo](https://web3-0-twitter-clone.vercel.app/) for the application.
+Here's a [demo]() for the application.
 
 ### Features
 ---
