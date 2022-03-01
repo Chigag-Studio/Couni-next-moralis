@@ -36,10 +36,12 @@ const Navbar = () => {
 					Profile
 				</h1>
 			</Link>
+			<Link href='/'>
 			<h1 className='text-white flex items-center text-2xl font-medium hover:bg-red-600 transition-all rounded-full hover:cursor-pointer p-2' onClick={logout}>
 				<Image src={LogOutImage} height={33} width={33} />
 				Log Out
 			</h1>
+			</Link>
 		</nav>
 	)
 }
